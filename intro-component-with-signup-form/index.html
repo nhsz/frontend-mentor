@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="description">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is
+          great, but understanding how developers think is invaluable.
+        </p>
+      </div>
+      <div class="form-combo">
+        <div class="pricing-box">
+          <p><span class="trial-time">Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <div class="signup-form">
+          <form>
+            <div class="form-control">
+              <input id="firstname" name="firstname" type="text" placeholder="First Name" />
+              <img class="icon-error firstname" src="images/icon-error.svg" alt="icon-error" />
+              <p class="validation-error firstname-error">
+                <small>First Name cannot be empty</small>
+              </p>
+            </div>
+
+            <div class="form-control">
+              <input id="lastname" name="lastname" type="text" placeholder="Last Name" />
+              <img class="icon-error lastname" src="images/icon-error.svg" alt="icon-error" />
+              <p class="validation-error lastname-error">
+                <small>Last Name cannot be empty</small>
+              </p>
+            </div>
+
+            <div class="form-control">
+              <input id="email" name="email" type="email" placeholder="Email Address" />
+              <img class="icon-error email" src="images/icon-error.svg" alt="icon-error" />
+              <p class="validation-error email-error">
+                <small>Look like this it not an email</small>
+              </p>
+            </div>
+
+            <div class="form-control">
+              <input id="password" name="password" type="password" placeholder="Password" />
+              <img class="icon-error password" src="images/icon-error.svg" alt="icon-error" />
+              <p class="validation-error password-error"><small>Password cannot be empty</small></p>
+            </div>
+
+            <button class="claim-trial" type="submit">CLAIM YOUR FREE TRIAL</button>
+            <p class="terms-and-services">
+              <small
+                >By clicking the button, you are agreeing to our
+                <a href="#">Terms and Services</a></small
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
